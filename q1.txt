@@ -1,0 +1,34 @@
+Write a linux command to perform below task
+
+a)Find the number of lines in /etc/passwd
+wc -l /etc/passwd
+
+b)write first 10 lines of "ps -e" command to file "process.txt"
+ps -e | head -n 10 > process.txt
+
+c)create file "my.txt" and change it's permission so that only group is allowed to read and write
+touch my.txt
+chmod 0660 my.txt
+
+d)create a new user "cdac2" with default bash shell
+sudo useradd -m -s /bin/bash cdac2
+
+
+e)change the ownership of "my.txt" to "cdac2" user
+chown cdac2 my.txt
+
+
+Q2)
+Write a bash script to find the given user input file is user readable or not 
+
+
+Q3)
+a)write a program to print first 10 Fibonacci number using java
+b)Create git project 
+c) write a dockerfile to execute option a) program in container
+
+q4)
+
+a)create a project(Select simple maven project) with all required dependencies
+b)write selenium script to automate "calculator"
+  i)open https://testpages.eviltester.com/styled/calculator
